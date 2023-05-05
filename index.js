@@ -1,6 +1,6 @@
 const express = require('express');
 const mongoose = require('mongoose');
-const route = require('./src/routes/route');
+const route = require('./scewfcfw/routes/route');
 const socket = require('socket.io');
 require('dotenv').config()
 const multer = require('multer')
@@ -9,7 +9,7 @@ const app = express()
 const cors=require("cors")
 mongoose.set('strictQuery', false);
 app.use(cors())
-const Leads=require("./src/models/leadsModel")
+const Leads=require("./scewfcfw/models/leadsModel")
 const cookieParser=require("cookie-parser")
 app.use(express.json());
 app.use(cookieParser())
